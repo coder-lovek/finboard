@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>Finance Dashboard – Next.js</h1>
 
-## Getting Started
+<p>
+This is a <strong>Finance Dashboard</strong> project built using 
+<strong>Next.js</strong>, <strong>Tailwind CSS</strong>, and 
+<strong>Drag & Drop widgets</strong>. Users can dynamically add widgets using live APIs, 
+map JSON fields, reorder widgets, and the dashboard state persists across refresh.
+</p>
 
-First, run the development server:
+<hr />
 
-```bash
+<h2>🚀 Getting Started</h2>
+
+<p>First, install dependencies:</p>
+<pre>
+npm install
+</pre>
+
+<p>Run the development server:</p>
+<pre>
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+</pre>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>
+Open <a href="http://localhost:3000">http://localhost:3000</a> with your browser to see the dashboard.
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<p>You can start editing:</p>
+<ul>
+<li><code>app/page.tsx</code> — Dashboard UI + Logic</li>
+<li><code>app/WidgetCard.tsx</code> — Widget Rendering</li>
+</ul>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<hr />
 
-## Learn More
+<h2>✨ Features</h2>
 
-To learn more about Next.js, take a look at the following resources:
+<ul>
+<li>🧩 Add Custom Widgets</li>
+<li>✏️ Edit Widget Settings</li>
+<li>❌ Delete Widgets</li>
+<li>🔄 Real-time API refresh with configurable interval</li>
+<li>🌍 Supports any REST API</li>
+<li>🧭 JSON Field Selector using dot notation (ex: <code>rates.INR</code>)</li>
+<li>🧲 Drag & Drop Widgets with persistent order</li>
+<li>💾 LocalStorage persistence</li>
+<li>⚠️ Loading + Error Handling</li>
+<li>📱 Fully Responsive UI</li>
+</ul>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<hr />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<h2>🌍 Example API</h2>
 
-## Deploy on Vercel
+<p>Use this free public exchange API:</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<pre>
+https://open.er-api.com/v6/latest/USD
+</pre>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p>Example fields:</p>
+
+<pre>
+rates.INR, rates.EUR, base_code
+</pre>
+
+<hr />
+
+<h2>💾 Persistent State</h2>
+
+<p>
+All dashboard data is stored in <strong>LocalStorage</strong>, meaning:
+</p>
+
+<ul>
+<li>Widgets remain after refresh</li>
+<li>Layout order is preserved</li>
+<li>No backend required</li>
+</ul>
+
+<hr />
+
+<h2>🧰 Tech Stack</h2>
+
+<ul>
+<li>Next.js (App Router)</li>
+<li>React</li>
+<li>Tailwind CSS</li>
+<li>@hello-pangea/dnd (Drag & Drop)</li>
+<li>LocalStorage</li>
+</ul>
+
+<hr />
+
+<h2>📚 Learn More</h2>
+
+<ul>
+<li><a href="https://nextjs.org/docs">Next.js Documentation</a></li>
+<li><a href="https://nextjs.org/learn">Learn Next.js</a></li>
+<li><a href="https://github.com/vercel/next.js">Next.js GitHub Repo</a></li>
+</ul>
+
+<hr />
+
+<h2>🚀 Deploy on Vercel</h2>
+
+<p>
+The easiest way to deploy is via <a href="https://vercel.com">Vercel</a>.
+</p>
+
+<p>
+Deployment Docs: 
+<a href="https://nextjs.org/docs/app/building-your-application/deploying">
+Next.js Deployment Guide
+</a>
+</p>
+
+<hr />
+
+<h2>👤 Author</h2>
+
+<p>
+<strong>Your Name</strong><br />
+GitHub: https://github.com/yourusername <br />
+Email: your@email.com
+</p>
